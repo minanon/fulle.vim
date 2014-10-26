@@ -11,7 +11,7 @@ License :  {{{}}}
 
 ##Contents
 Introduction				`fulle-introduction`  
-Useage				`fulle-usage`  
+Usage				`fulle-usage`  
 Install			`fulle-install`  
 Interface		`fulle-interface`  
 Variables				  `fulle-variables`  
@@ -30,7 +30,7 @@ latest:
 https://github.com/minanon/fulle.vim  
 
 
-##USEAGE
+##USAGE
 Incase of vertical split view list on right  
 
 ```vim

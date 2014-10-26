@@ -10,7 +10,7 @@ License :  {{{}}}
 Contents						*fulle-contents*
 
 Introduction				|fulle-introduction|
-Useage				|fulle-usage|
+Usage				|fulle-usage|
 Install			|fulle-install|
 Interface		|fulle-interface|
   Variables				  |fulle-variables|
@@ -32,7 +32,7 @@ https://github.com/minanon/fulle.vim
 
 
 ==============================================================================
-USEAGE						*fulle-usage*
+USAGE						*fulle-usage*
 
 	Incase of vertical split view list on right
 >

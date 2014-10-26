@@ -6,6 +6,7 @@ let g:fulle_function_pattern = {
     \ 'pascal'     : '/\c\vprocedure|function\s+.*\(/',
     \ 'javascript' : '/\c\vfunction\s*.*\(/',
     \ 'perl'       : '/\c\v^\s*sub\s+[^{]*/',
+    \ 'sh'         : '/\c\v^(function)?\s*.+\(\)/',
 \}
 
 " for parse lwindow list
@@ -13,6 +14,7 @@ let g:fulle_exclude_pattern_from_list = {
     \ 'javascript' : '/\c\v.{-}\|(\d*).{-}\|.{-}(([a-zA-Z0-9\.]+)\s*[\=:])?\s*function\s*([a-zA-Z0-9\.]*)\s*(\(.{-}\)).*\{?/\1:\3\4\5/',
     \ 'perl'       : '/\c\v.*\|(\d*)\s.*\|\s*.*(sub)/\1:\2/',
     \ 'vim'        : '/\c\v.*\|(\d*)\s.*\|\s*.*function!?/\1:/',
+    \ 'sh'         : '/\c\v.*\|(\d*)\s.*\|\s*(function)?/\1:/',
 \}
 
 " width for vertical
