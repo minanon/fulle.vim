@@ -1,7 +1,7 @@
 " for lvimgrep pattern
 let g:fulle_function_pattern = {
     \ 'php'        : '/\c\vfunction\s+.*\(|^\s*class\s+.*/',
-    \ 'ruby'       : '/^\s*def\s\=(*)*/',
+    \ 'ruby'       : '/\v^\s*(def|class|module)\s/',
     \ 'vim'        : '/function!\= \+\(.*\)/',
     \ 'pascal'     : '/\c\vprocedure|function\s+.*\(/',
     \ 'javascript' : '/\c\vfunction\s*.*\(/',
@@ -15,6 +15,7 @@ let g:fulle_exclude_pattern_from_list = {
     \ 'perl'       : '/\c\v.*\|(\d*)\s.*\|\s*.*(sub)/\1:\2/',
     \ 'vim'        : '/\c\v.*\|(\d*)\s.*\|\s*.*function!?/\1:/',
     \ 'sh'         : '/\c\v.*\|(\d*)\s.*\|\s*(function)?/\1:/',
+    \ 'ruby'       : '/\c\v.*\|(\d*)\s.*\|\s*.*(def|(class|module))/\1:\3/',
 \}
 
 " width for vertical
