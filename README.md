@@ -1,4 +1,5 @@
-#fulle.vim
+# fulle.vim
+
 View function list
 
 *fulle.txt*	View function list  
@@ -9,7 +10,8 @@ Version: 1.0
 Author : minanon &lt;sumi.minano@gmail.com&gt;  
 License :  {{{}}}  
 
-##Contents
+## Contents
+
 Introduction				`fulle-introduction`  
 Usage				`fulle-usage`  
 Install			`fulle-install`  
@@ -22,7 +24,8 @@ TODO				`fulle-todo`
 ChangeLog			`fulle-changelog`  
 
 
-##INTRODUCTION
+## INTRODUCTION
+
 *fulle* view function list.  
 If you push enter on function name, you can see it line.  
 
@@ -30,7 +33,8 @@ latest:
 https://github.com/minanon/fulle.vim  
 
 
-##USAGE
+## USAGE
+
 Incase of vertical split view list on right  
 
 ```vim
@@ -56,15 +60,19 @@ Incase of horizontal  split view list on bottom
 
 
 
-##INSTALL
+## INSTALL
+
 Install the distributed files into your Vim script directory which is usually ~/.vim/, or $HOME/vimfiles on Windows.  
 
 After installation you can run unite with the `:Fulle` command.  
 
 
-##INTERFACE
-###VARIABLES
-###g:fulle_function_pattern
+## INTERFACE
+
+### VARIABLES
+
+#### g:fulle_function_pattern
+
 You can set function line pattern each *filetype* .  
 
 default:  
@@ -83,7 +91,8 @@ default:
 <  
 
 
-###g:fulle_exclude_pattern_from_list
+#### g:fulle_exclude_pattern_from_list
+
 This setting remove unnecessary string from function list.  
 	
 default:  
@@ -106,33 +115,40 @@ not exist type on setting:
 
 
 
-###g:fulle_window_width
+#### g:fulle_window_width
+
 This setting is width for Fulle or FulleVertical open quickfix window  
 
 default: 30  
 
 
-###g:fulle_window_height
+#### g:fulle_window_height
+
 This setting is height for Fulle or FulleVertical open quickfix window  
 
 default: 6  
 
 
-###COMMANDS
-###:Fulle
+### COMMANDS
+
+#### :Fulle
+
 This split vertical window and open function list.  
 This call fulle#listup_vertical() in internal process.  
 
 
-###:FulleVertical
+#### :FulleVertical
+
 This split vertical window and open function list.  
 
 
-###:FulleHorizontal
+#### :FulleHorizontal
+
 This split horizontal window and open function list.  
 
 
-###FUNCTIONS
+### FUNCTIONS
+
 fulle#listup()					*fulle#listup()*  
 This split vertical window and open function list.  
 This is alias to fulle#listup_vertical().  
@@ -141,7 +157,8 @@ fulle#listup_vertical()				*fulle#listup_vertical()* This split vertical window 
 
 
 fulle#listup_horizontal()			*fulle#listup_horizontal()* This split horizontal window and open function list.   
-##EXAMPLES
+
+## EXAMPLES
 
 ```vim
 map <silent> <C-T> :Fulle<CR>
@@ -149,9 +166,9 @@ map <silent> <C-T> :Fulle<CR>
 
 
 
-##TODO
+## TODO
 
-##CHANGELOG
+## CHANGELOG
 2014-10-8  
 
 - Ver.1.0 public this plugin.

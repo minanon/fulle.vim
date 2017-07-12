@@ -1,4 +1,5 @@
-#fulle.vim
+# fulle.vim
+
 関数リストを表示する
 
 *fulle.txt*	関数リストを表示する  
@@ -9,7 +10,8 @@ Version: 1.0
 Author : minanon &lt;sumi.minano@gmail.com&gt;  
 License :  {{{}}}  
 
-##目次
+## 目次
+
 概要				`fulle-introduction`  
 使い方				`fulle-usage`  
 インストール			`fulle-install`  
@@ -22,7 +24,8 @@ TODO				`fulle-todo`
 更新履歴			`fulle-changelog`  
 
 
-##概要
+## 概要
+
 *fulle* は、quickfixウィンドウに関数のリストを表示します。  
 リストの関数名上Enterキーを押すことで、該当行を表示することができます。  
 
@@ -30,7 +33,8 @@ TODO				`fulle-todo`
 https://github.com/minanon/fulle.vim  
 
 
-##使い方
+## 使い方
+
 縦分割し、右端に関数リストを表示する場合  
 
 ```vim
@@ -56,15 +60,19 @@ https://github.com/minanon/fulle.vim
 
 
 
-##インストール
+## インストール
+
 配布ファイルをVimスクリプトのディレクトリへインストールしてください。 (普通は ~/.vim/ またはWindowsの場合、 $HOME/vimfiles)  
 
 インストールに成功すると、`:Fulle`コマンドでfulleを実行することができます。  
 
 
-##インターフェイス
-###変数
-###g:fulle_function_pattern
+## インターフェイス
+
+### 変数
+
+#### g:fulle_function_pattern
+
 filetypeに対して、関数を取り出すパターンを記述します。  
 
 既定値:  
@@ -83,7 +91,8 @@ filetypeに対して、関数を取り出すパターンを記述します。
 <  
 
 
-###g:fulle_exclude_pattern_from_list
+#### g:fulle_exclude_pattern_from_list
+
 上記パターンを用いて取り出したリストから、不要な文字列を削除するためのパターンを記述します。   
 既定値:  
 
@@ -105,33 +114,40 @@ filetypeに対して、関数を取り出すパターンを記述します。
 
 
 
-###g:fulle_window_width
+#### g:fulle_window_width
+
 Fulleまたは、FulleVerticalで、 quickfixウィンドウを縦分割で開く際の幅を指定します。  
 
 既定値: 30  
 
 
-###g:fulle_window_height
+#### g:fulle_window_height
+
 FulleHorizontalで、quickfixウィンドウを水平分割で開く際の高さを指定します。  
 
 既定値: 6  
 
 
-###コマンド
-###:Fulle
+### コマンド
+
+#### :Fulle
+
 関数リストを縦分割して開きます。  
 内部的にfulle#listup_vertical()を呼び出します。  
 
 
-###:FulleVertical
+#### :FulleVertical
+
 関数リストを縦分割して開きます。  
 
 
-###:FulleHorizontal
+#### :FulleHorizontal
+
 関数リストを水平分割して開きます。  
 
 
-###関数
+### 関数
+
 fulle#listup()					*fulle#listup()*  
 関数リストを縦分割して開きます。  
 fulle#listup_vertical()へのエイリアスとなっています。  
@@ -141,7 +157,7 @@ fulle#listup_vertical()				*fulle#listup_vertical()*関数リストを縦分割�
 
 fulle#listup_horizontal()			*fulle#listup_horizontal()*関数リストを水平分割して開きます。  
 
-##設定例
+## 設定例
 
 ```vim
 map <silent> <C-T> :Fulle<CR>
@@ -149,8 +165,9 @@ map <silent> <C-T> :Fulle<CR>
 
 
 
-##TODO
+## TODO
 
-##更新履歴
+## 更新履歴
+
 doc/fulle.txtを参照してください。  
 vim:tw=78:ts=8:ft=help:norl:noet:fen:  
